@@ -1,0 +1,76 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "EA",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "mDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "eDate",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "Q",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      },
+      {
+        "internalType": "address",
+        "name": "reseller",
+        "type": "address"
+      }
+    ],
+    "name": "approveReturnedPackage",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "CA",
+        "type": "address"
+      }
+    ],
+    "name": "regiterCA",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "Reseller",
+        "type": "address"
+      }
+    ],
+    "name": "regiterReseller",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
