@@ -1,44 +1,5 @@
 [
 	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "ReturnedPackageEA",
-				"type": "address"
-			}
-		],
-		"name": "approveReturnedPackage",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "CA",
-				"type": "address"
-			}
-		],
-		"name": "regiterCA",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "Reseller",
-				"type": "address"
-			}
-		],
-		"name": "regiterReseller",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
 		"inputs": [],
 		"stateMutability": "nonpayable",
 		"type": "constructor"
@@ -60,11 +21,50 @@
 		"inputs": [
 			{
 				"internalType": "address",
+				"name": "LotAddress",
+				"type": "address"
+			}
+		],
+		"name": "approveDispatched",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "manu",
+				"type": "address"
+			}
+		],
+		"name": "registerManufacturer",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "seller",
+				"type": "address"
+			}
+		],
+		"name": "registerSeller",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
 				"name": "s",
 				"type": "address"
 			}
 		],
-		"name": "ResellerExists",
+		"name": "sellerExists",
 		"outputs": [
 			{
 				"internalType": "bool",

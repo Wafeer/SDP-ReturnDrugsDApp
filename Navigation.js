@@ -5,13 +5,13 @@ import { NavLink } from 'react-router-dom';
 const Navigation = () => {
     return (
        <div>
-          <NavLink to="/"> <Button  type="submit"> Home  </Button> </NavLink>
-          <NavLink to="./FDA"> <Button  type="submit"> FDA </Button> </NavLink>
-          <NavLink to="./Manufacturers"> <Button  type="submit"> Manufacturers </Button> </NavLink>
-          <NavLink to="./Sellers"> <Button  type="submit"> Sellers </Button> </NavLink>
-          <NavLink to="./CA"> <Button  type="submit"> CA </Button> </NavLink>
-          <NavLink to="./Reseller"> <Button  type="submit"> Reseller </Button> </NavLink>
-          <NavLink to="./Patients"> <Button  type="submit"> Patients </Button> </NavLink>
+          <NavLink to="/"> <button class="barButtonsnav" type="submit"> Home  </button> </NavLink>
+          <NavLink to="./FDA"> <button  class="barButtonsnav" type="submit"> FDA </button> </NavLink>
+          <NavLink to="./Manufacturers"> <button class="barButtonsnav" type="submit"> Manufacturers </button> </NavLink>
+          <NavLink to="./Sellers"> <button  class="barButtonsnav" type="submit"> Sellers </button> </NavLink>
+          <NavLink to="./CA"> <button class="barButtonsnav" type="submit"> CA </button> </NavLink>
+          <NavLink to="./Reseller"> <button  class="barButtonsnav" type="submit"> Reseller </button> </NavLink>
+          <NavLink to="./Patients"> <button class="barButtonsnav" type="submit"> Patients </button> </NavLink>
 
        </div>
     );

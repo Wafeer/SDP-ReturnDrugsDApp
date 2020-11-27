@@ -8,7 +8,7 @@ import IPFS from './ipfs';
 import ReactDOM from "react-dom";
 import QrCode from 'react.qrcode.generator';
 import QrReader from "react-qr-reader";
-import RPabi from "./OldRPabi.json";
+import RPabi from "./RPabi.json";
 //var qcode = "Hello world";
 class App1 extends Component {
   constructor(props) {
