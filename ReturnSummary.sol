@@ -1,5 +1,4 @@
  pragma solidity >=0.4.22;
-
 contract ReturnedDrugsSummary{
     
     address FDA;
@@ -16,19 +15,28 @@ contract ReturnedDrugsSummary{
     
     modifier onlyFDA{
       require(msg.sender == FDA,
-      "Sender not authorized."
+      "FDA not authorized."
       );
       _;
     }    
     
     modifier onlyCA{
       require(ApprovedCA[msg.sender],
-      "Sender not authorized."
+      "Certification Agency not authorized."
       );
       _;
     }    
     
-    
+    function AutoAthuentication() public view returns (string memory usertype) {
+        if (msg.sender ==FDA)
+            return "FDA";
+        if (ApprovedResellers[msg.sender])
+            return "Reseller";
+        else if (ApprovedCA[msg.sender])
+            return "CA";
+        else 
+            return "None";
+    }
     function regiterReseller(address Reseller) public onlyFDA{
         require(!ApprovedResellers[Reseller],
             "Reseller exists already"
@@ -45,12 +53,11 @@ contract ReturnedDrugsSummary{
         ApprovedCA[CA]=true;
     }
     
-    function approveReturnedPackage(address EA, string memory name, uint mDate, uint eDate, uint Q, uint price,address reseller) public onlyCA {
-        require(ApprovedResellers[msg.sender],
-            "Reseller not approved"
-            );
-        returnedDrugPackages[EA]=true;
+    function approveReturnedPackage(address ReturnedPackageEA) public onlyCA {
+        returnedDrugPackages[ReturnedPackageEA]=true;
     }
-    
+     function ResellerExists(address s) public view returns(bool){
+        return ApprovedResellers[s];
+    }
     
 }

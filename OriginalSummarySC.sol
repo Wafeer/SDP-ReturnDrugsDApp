@@ -1,4 +1,3 @@
- pragma solidity >=0.4.22;
 contract ReturnedPackage{
     
     //address EA;
@@ -55,6 +54,7 @@ contract ReturnedPackage{
        owner=newOwner;
        emit OwnerChanged(owner, OT, now);
    }
+   // should this onlyowner?????
    function resellDrug(uint boxNumber) public onlyOwner onlyReseller{
        require(!drugResold[boxNumber],
         "Drug Box Resold"
